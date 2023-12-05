@@ -1,4 +1,4 @@
-import { Container } from '@/components/core/Container';
+import { Container } from '@/components/Container';
 import { GitHubIcon } from '@/components/icons/GithubIcon';
 import { LinkedInIcon } from '@/components/icons/LinkedInIcon';
 import Link from 'next/link';
@@ -16,9 +16,9 @@ function SocialLink({
   );
 }
 
-export default function Page() {
+export default async function Page() {
   return (
-    <main>
+    <>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -41,6 +41,6 @@ export default function Page() {
           </div>
         </div>
       </Container>
-    </main>
+    </>
   );
 }

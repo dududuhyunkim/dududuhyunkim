@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { Container } from './core/Container';
+import { Container } from './Container';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';

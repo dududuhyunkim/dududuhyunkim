@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.anchor:after {
+  content: '#'
+}
+
 pre[class*='language-'] {
   color: theme('colors.zinc.100');
 }

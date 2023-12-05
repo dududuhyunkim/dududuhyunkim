@@ -1,4 +1,7 @@
+import typographyPlugin from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
+
+import typographyStyles from './typography';
 
 const config: Config = {
   content: [
@@ -7,6 +10,7 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class',
+  plugins: [typographyPlugin],
   theme: {
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
@@ -23,6 +27,7 @@ const config: Config = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+    typography: typographyStyles,
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
